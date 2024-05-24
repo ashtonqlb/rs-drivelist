@@ -1,9 +1,7 @@
 # Readme
-This is basically a Rust implementation of [Balena's drivelist](https://github.com/balena-io-modules/drivelist).
-At the moment, I don't own a Mac machine, so it only supports:
+This is basically a Rust implementation of Balena's [drivelist](https://github.com/balena-io-modules/drivelist) command-line utility. Supports Windows, Linux and macOS.
 
- - Windows
- - Linux
+It theoretically also supports BSD but I don't use it so I don't know.
 
 [![crates.io](https://img.shields.io/crates/v/rs-drivelist?label=latest)](https://crates.io/crates/rs-drivelist) ![MSRV](https://img.shields.io/badge/rustc-1.59+-ab6000.svg) ![MIT or Apache 2.0 licensed](https://img.shields.io/crates/l/actix-web.svg)
 
@@ -14,7 +12,7 @@ Issue command at your root project directory:
     cargo add "rs-drivelist"
   Or edit your `Cargo.toml` file, and add this line:
 
-    rs-drivelist = "0.9.0"
+    rs-drivelist = "0.9.5"
 
 ## Usage
 
@@ -60,7 +58,6 @@ This library exports one function: rs_drivelist::drive_list() which returns a `R
     }]
 
 ## Linux Output
-
     [{
         "enumerator": "lsblk:json",
         "busType": "NVME",
@@ -109,4 +106,3 @@ This library exports one function: rs_drivelist::drive_list() which returns a `R
         "isRemovable": false,
         "isUAS": null
     }]
-
